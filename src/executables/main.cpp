@@ -6,7 +6,7 @@
 int main() {
   std::string m;
   std::cin >> m;
-  std::cout << m << "And";
+  std::cout << m << "And ";
   librarys::Say_Hello();
   return 0;
 }

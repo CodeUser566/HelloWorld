@@ -8,7 +8,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug LLDB",
-            "program": "../build/clang-deb-ninja/src/executables/executable",
+            "program": "${workspaceFolder}/build/clang-deb-ninja/src/executables/executable",
             "args": [],
             "cwd": "${workspaceFolder}"
         }

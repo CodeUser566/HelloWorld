@@ -5,6 +5,6 @@ namespace  librarys
 {
     void Say_Hello()
     {
-        std::cout << "Fuck You from Lib";
+        std::cout << " Fuck You from Lib ";
     }
 }
