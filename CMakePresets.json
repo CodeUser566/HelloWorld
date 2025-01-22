@@ -26,8 +26,8 @@
             "hidden": true,
             "generator": "Ninja",
             "cacheVariables": {
-                "CMAKE_C_COMPILER": "clang-18",
-                "CMAKE_CXX_COMPILER": "clang++-18",
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
                 "CMAKE_CXX_FLAGS_INIT": "$env{CMAKE_CXX_FLAGS} -Werror -Wall -Wextra -pedantic"
             }
         },
@@ -48,7 +48,7 @@
             "binaryDir": "${sourceDir}/build/clang-deb-ninja",
             "inherits": ["clang-ninja", "deb"],
             "cacheVariables": {
-                "CMAKE_CXX_FLAGS": "-O0 --coverage -g",
+                "CMAKE_CXX_FLAGS": "-O0 --coverage -g -fsanitize=address -fstandalone-debug",
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/clang-deb-ninja/install"
             }
         }
